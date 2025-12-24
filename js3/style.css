@@ -1,0 +1,66 @@
+/* 全体のリセットとレイアウト */
+body {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    background-color: #f0f4f8; /* 優しい背景色 */
+    color: #333;
+    margin: 0;
+    height: 100vh; /* 画面いっぱいの高さ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* タイトルのスタイル */
+h1 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* メインのカードエリア */
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 400px; /* 幅が広がりすぎないように */
+    padding: 40px 20px;
+    border-radius: 16px; /* 角丸 */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ふんわりした影 */
+    text-align: center;
+}
+
+/* テキストエリア */
+#weight-content {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    min-height: 1.5em; /* 文字が変わってもガタつかないように高さを確保 */
+    color: #2c3e50;
+}
+
+/* ボタンのスタイル */
+button {
+    background-color: #3498db; /* 鮮やかな青 */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50px; /* 丸いボタン */
+    cursor: pointer;
+    transition: all 0.2s ease; /* アニメーション設定 */
+    box-shadow: 0 4px 6px rgba(52, 152, 219, 0.3);
+}
+
+/* ボタンにマウスを乗せた時 */
+button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px); /* 少し浮き上がる */
+    box-shadow: 0 6px 8px rgba(52, 152, 219, 0.4);
+}
+
+/* ボタンを押した時 */
+button:active {
+    transform: translateY(0); /* 元に戻る */
+    box-shadow: 0 2px 4px rgba(52, 152, 219, 0.3);
+}
